@@ -1,0 +1,215 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <style>
+       
+        main{
+            width: 100%;
+            height: 100%;
+            
+        }
+        
+        body{
+            background-image: url('https://i.pinimg.com/originals/e0/58/fa/e058fa970fc282e03edc68ff4feb32d9.gif');
+            opacity: 1;
+            background-size: cover; 
+            background-position: center; 
+        }
+        .contenedor_informacion{
+            width: 50%;
+            height: 70%;
+            display: absolute;
+            display: absolute;
+            position: absolute;
+            transform: translate(50%,-200%);
+            border: solid 2px black;
+            border-radius: 20px;
+           
+            
+        }
+        .active{
+            display: absolute;
+            position: absolute;
+            transition: 1000ms;
+            transform: translate(50%,20%);
+
+        }
+        
+        .contenedor_personal{
+            width: 97%;
+            height: 30%;
+            border: solid thin hotpink;
+            display: absolute;
+            position: absolute;
+            transition: 1000ms;
+            transform: translateX(-200%);
+            backdrop-filter:blur(0.6rem);
+            background:#fafafa10 ;
+            
+
+        }
+        .active1{
+            text-align: center;
+            border: solid thin hotpink;
+            display: absolute;
+            position: absolute;
+            transition: 1400ms;
+            transform: translateX(0%);
+            margin: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+            
+  font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+
+        }
+        .contenedor_ilustracion{
+            margin: 10px;
+            width: 70%;
+            height: 30%;
+        border: solid thin orange;
+        text-align: center;
+                   
+  font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+        transform: translate(-200%,110%);
+        border-radius: 20px;
+        backdrop-filter:blur(0.6rem);
+        background:#fafafa10 ;
+        }
+        .contenedor_ilustracion p {
+         transform: translatey(-20%);
+        }
+        .contenedor_redes{
+             width: 97%;
+             height: 30%;
+             border: solid thin rebeccapurple;
+             transform: translate(-200%,300%);
+             margin: 10px;
+             border-radius: 20px;
+             backdrop-filter:blur(0.6rem);
+             background:#fafafa10 ;
+             text-align: center;
+                  
+  font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+
+        }
+        .contenedor_gif{
+            width:24%;
+            height: 30%;
+            border: solid thin yellowgreen;
+            margin: 10px;
+            transform: translate(596%,4%);
+            margin: 10px;
+            border-radius: 20px;
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/09552da2-5e3f-408b-af86-66127a80a8f6/deo26c4-6dd753b1-a6db-4e13-950b-8309da904585.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA5NTUyZGEyLTVlM2YtNDA4Yi1hZjg2LTY2MTI3YTgwYThmNlwvZGVvMjZjNC02ZGQ3NTNiMS1hNmRiLTRlMTMtOTUwYi04MzA5ZGE5MDQ1ODUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MmAYSPPEFJDykyd9u6dR0CIwzpfAhh3dlg0km4-j2dY' );
+            background-size: cover; 
+            background-position: center; 
+            backdrop-filter:blur(0.2rem);
+            
+        }
+        .active3{
+            display: absolute;
+            position: absolute;
+            transition: 1700ms;
+            transform: translate(0%,220%);
+        }
+        .active2{
+            display: absolute;
+            position: absolute;
+            transition: 1900ms;
+            transform: translate(0%,110%);
+        }
+        .active4{
+            display: absolute;
+            position: absolute;
+            transition: 1600ms;
+            transform: translate(298%,110%);
+        }
+        #iconos{
+            font-size: 60px ;
+            margin: 2px;
+            
+        }
+
+
+    </style>
+ <script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    setTimeout(() => {
+        const contenedorInformacion = document.querySelector('.contenedor_informacion');
+        const contenedorPersonal = document.querySelector('.contenedor_personal');
+        const contenedorIlustracion = document.querySelector('.contenedor_ilustracion');
+        const contenedorRedes = document.querySelector('.contenedor_redes');
+        const contenedorGif = document.querySelector('.contenedor_gif');
+        
+        if (contenedorInformacion) {
+            contenedorInformacion.classList.add('active');
+        }
+        if (contenedorPersonal) {
+            contenedorPersonal.classList.add('active1');
+        }
+        if (contenedorIlustracion) {
+            contenedorIlustracion.classList.add('active2');
+        }
+        if (contenedorRedes) {
+            contenedorRedes.classList.add('active3');
+        }
+        if (contenedorGif) {
+            contenedorGif.classList.add('active4');
+        }
+    }, 0);
+});
+
+
+</script>
+<main>
+<div class="contenedor_informacion  ">
+    <div class="contenedor_personal">
+<h1>¡Hola mucho gusto!</h1>
+<p>Muchas gracias por entrar a mi pagina</p>
+    </div>
+    <div class="contenedor_ilustracion">
+    <h1>¡Hola soy Roberto!</h1>
+    <p>La gran mayoria de personas me conoces como Beto,Betote 
+   me gusta mucho la carne asada y todo el mundo de las caricaturas o mundo cinematografico.</p>
+    </div>
+<div class="contenedor_gif">
+
+</div>
+    <div class="contenedor_redes">
+<h1>Estas son mis redes</h1>
+
+<a href="https://www.instagram.com/betote_tt/"> <i class="fa-brands fa-instagram"id="iconos"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100079849677774">  <i class="fa-brands fa-facebook"id="iconos" ></i></a>
+    <a href="https://wa.me/+528342663350">    <i class="fa-brands fa-whatsapp"id="iconos" ></i></a>
+    </div>
+</div>
+</main>
+
+
+
+
+
+</body>
+
+
+</html>
